@@ -1,0 +1,87 @@
+<!--Eric Yang-->
+<!--I pledge my honor that I have abided by the Stevens Honor System-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/default.css">
+        <script type="text/javascript" src="js/reviews.js"></script>
+    </head>
+    <body class = "body" onload="welcome()">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a class="active" href="reviews.html">Reviews</a>
+            <a href="eventsandcatering.html">Events and Catering</a>
+            <a href="about.html">About Us</a>
+            
+        </nav>
+        <img class="image_review" src="images/ReviewBG.jpg" alt = "Review Picture"/>
+        <h1>We love to know what you think about us !</h1><br>
+        <h2>Enter your Review: </h2>
+        <div class="div_input">
+            <input type = "checkbox" id = "anonymous" onclick="anonymous(this)"> <label><small> &nbsp;* I like to comment anonymously</small> </label>
+            <br><br>
+            <label> First Name: </label><input type="text" id = "first" placeholder="Your First Name"><label class="reminder"><small> &nbsp;* Leave this blank empty if you want to hide your first name</small></label>
+            <br><br>
+            <label> Second Name: </label><input type="text" id = "second" placeholder="Your Second Name"><label class="reminder"><small> &nbsp;* Leave this blank empty if you want to hide your second name</small></label>
+            <br><br>
+            <label> Phone number: </label><input type="tel" id = "phone" placeholder="1234567890" maxlength="10">
+            <br><br>
+            <label> Rate us: </label><select id = "rate"><option>1</option><option>2</option><option>3</option><option>4</option><option selected = "selected">5</option></select>
+            <br><br>
+            <label> Enter Comment: </label><br><br>
+            <textarea id = "comment" rows = "4" cols = "45" placeholder="Your Thought here ~"></textarea>
+            <br><br>
+            <button onclick="add_comment()"> Submit </button>
+        </div>
+        <br><br><br>
+
+        <h3>Reviews</h3>
+        <button onclick="scroll_buttom()"> See the latest review</button>
+        <div class="div_review" id = "div_comment">
+            <div>
+                <p>Eric Yang on <time>2022-10-29</time>: </p>
+                <p>Rating: 5</p>
+                <p>Great food, great service, great time! ~</p>
+            </div>
+            <hr>
+            <div>
+                <p>??? on <time>2022-10-29</time>: </p>
+                <p>Rating: 5</p>
+                <p>This is a good resturant ~</p>
+            </div>
+            <hr>
+        </div>
+        
+
+        <br><br><br>
+    </body>
+    <footer>
+        <div class="footer">
+            <span class="rightfooter">
+                <div class="footercategory">Address:</div>
+                169 Washington Street<br>
+                Hoboken, NJ<br>
+                07030<br><br>
+                <div class="footercategory">Phone:</div>
+                (732)-911-9911
+            </span>
+            <span class="leftfooter">
+                <div class="footercategory">Hours:</div>
+                Monday to Thursday<br>9AM - 8PM<br>
+                Friday and Saturday<br>9AM - 10PM<br>
+                Sunday<br>
+                <div class="red">
+                    Closed
+                </div>
+                <br>
+            </span>
+            <p class="centerfooter">
+                <a class="footercategory2" href="mailto:LCC@example.com">Email</a>
+                <br>
+                <a class="footercategory2" href="https://www.instagram.com/">Instagram</a>
+            </p>
+            
+        </div>
+    </footer>
+</html>
